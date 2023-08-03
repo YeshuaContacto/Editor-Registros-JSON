@@ -1,10 +1,15 @@
-from PySide6.QtWidgets import QApplication, QMainWindow
 import sys
+import json
+from PySide6.QtWidgets import QApplication, QMainWindow, QTableWidgetItem
+from PySide6.QtCore import Qt
+from helpers import absPath
+from ui_tabla import Ui_MainWindow
 
 
-class MainWindow(QMainWindow):
+class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
+        self.setupUi(self)
 
 
 if __name__ == '__main__':
