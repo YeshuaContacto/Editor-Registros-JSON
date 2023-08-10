@@ -1,6 +1,7 @@
 # Editor-Registros-JSON - YeshuaContacto
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)]()
 [![PySide6](https://img.shields.io/badge/PySide6-Qt-4A90E2?style=for-the-badge&logo=qt&logoColor=white&labelColor=101010)](https://wiki.qt.io/Qt_for_Python)
+[![JSON](https://img.shields.io/badge/JSON-Data-000000?style=for-the-badge&logo=json&logoColor=white&labelColor=101010)](https://www.json.org/)
 
 ![[https://github.com/YeshuaContacto](https://github.com/YeshuaContacto)](./Editor-Registros-JSON.PNG.jpg)
 
