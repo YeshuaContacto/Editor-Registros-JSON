@@ -15,11 +15,20 @@ contactos = [
     ("Marta", "Experta en Python", "marta@ejemplo.com")
 ]
 
-for contacto in contactos:
+for nombre, empleo, email in contactos:
     datos.append({
-        "nombre": contacto[0],
-        "empleo": contacto[1],
-        "email": contacto[2]
+        "nombre": nombre,
+        "empleo": empleo,
+        "email": email
     })
 
-print(datos)
+with open(absPath("contactos.json"), "w") as fichero:
+    json.dump(datos, fichero)
+
+datos = None
+
+with open(absPath("contactos.json")) as fichero:
+    datos = json.load(fichero)
+    for contacto in datos:
+        print(contacto["nombre"], contacto["empleo"], contacto["email"])
+
